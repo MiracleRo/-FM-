@@ -77,8 +77,8 @@
 	position: relative;
 	top: 5px;
 }
-.share:hover .hid_icon{
-	display: inline;
+.share:hover{
+	cursor: pointer;
 }
 .send2phone>a{
 	font-size: 13px;
@@ -149,4 +149,7 @@
 }
 #con_back:hover{
 	cursor: pointer;
+}
+.player_visible{
+	height: 245px;
 }

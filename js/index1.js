@@ -81,4 +81,66 @@
 		}
 		
 	}
+	var like =document.getElementById('like');
+	var listen_like =document.getElementsByClassName('listen_like')[0];
+	listen_like.onmouseover = function(){
+		like.src = 'img/like_hover.png';
+	}
+	listen_like.onmouseout=function(){
+		like.src = 'img/like.png';
+	}
+	var douban =document.getElementById('douban');
+	var weibo=document.getElementById('weibo');
+	var wechat=document.getElementById('wechat');
+	var qq=document.getElementById('qq');
+	var txweibo=document.getElementById('txweibo');
+	var renren=document.getElementById('renren');
+	douban.onmouseover =function(){
+		douban.src ='img/douban_hover.png';
+	}
+	douban.onmouseout = function(){
+		douban.src ='img/douban.png';
+	}
+	weibo.onmouseover =function(){
+		weibo.src ='img/weibo_hover.png';
+	}
+	weibo.onmouseout = function(){
+		weibo.src ='img/weibo.png';
+	}
+	wechat.onmouseover =function(){
+		wechat.src ='img/wechat_hover.png';
+	}
+	wechat.onmouseout = function(){
+		wechat.src ='img/wechat_hover.png';
+	}
+	qq.onmouseover =function(){
+		qq.src ='img/qq_hover.png';
+	}
+	qq.onmouseout = function(){
+		qq.src ='img/qq.png';
+	}
+	txweibo.onmouseover =function(){
+		txweibo.src ='img/txweibo_hover.png';
+	}
+	txweibo.onmouseout = function(){
+		txweibo.src ='img/txweibo.png';
+	}
+	renren.onmouseover =function(){
+		renren.src ='img/renren_hover.png';
+	}
+	renren.onmouseout = function(){
+		renren.src ='img/renren.png';
+	}
+	var share =document.getElementsByClassName('share')[0];
+	var hid =document.getElementsByClassName('hid_icon')[0];
+	share.onmouseover =function(){
+		hid.style.display='inline';
+	}
+	share.onmouseout =function(){
+		setTimeout(hidden,2000);
+	}
+	function hidden(){
+		hid.style.display="none";
+		return false;
+	}
 }(window))
