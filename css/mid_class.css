@@ -1,0 +1,121 @@
+.mid_con{
+	width: 850px;
+	margin: 0 auto;
+}
+.player_con{
+	position: relative;
+    top: -242px;
+    left: 262px;
+    width: 250px;
+}
+.player{
+	height: 245px;
+	width: 510px;
+	background-color: #fff;
+	position: relative;
+	left: 340px;
+	top: -90px;
+	box-shadow:10px 10px 5px #ededed;
+}
+.music_artist{
+	font-size: 20px;
+}
+.music_ablum{
+	font-size: 14px;
+}
+.music_ablum span{
+	color: #555;
+}
+.music_name{
+	font-size: 14px;
+	color: #096;
+	position: relative;
+	top: 30px;
+}
+.music_dur{
+	background-color: black;
+	width: 220px;
+	height: 2px;
+	position: relative;
+	top: 35px;
+}
+.music_cur{
+	background-color: #096;
+	width: 20px;
+	height: 2px;
+	position: relative;
+	top: 33px;
+}
+#player_btn{
+	position: relative;
+    top: -5px;
+    left: 200px;
+}
+.player_time{
+	width: 39px;
+    height: 15px;
+    border: 1px black solid;
+    position: relative;
+    left: 170px;
+    top: 35px;
+}
+.player_icon{
+	position: relative;
+    top: 80px;
+    left: 55px;
+}
+.player_icon img{
+	margin-left: 20px;
+}
+.player_icon:hover{
+	cursor: pointer;
+}
+.hid_icon{
+	display:none;
+	position: relative;
+	top: 5px;
+}
+.share:hover .hid_icon{
+	display: inline;
+}
+.send2phone>a{
+	font-size: 13px;
+	color: #555;
+	position: relative;	
+	top: -4px;
+}
+.send2phone>a:hover{
+	color: #999999;
+}
+.listen_like img{ 
+	width: 20px;
+	position: relative;
+    top: 3px;
+    left: 2px;
+}
+.listen_like{
+	position: relative;
+	left: 400px;
+	top: -20px;
+	font-size: 13px;
+	color: #55bb99;
+	height: 25px;
+	width: 100px;
+	border: 1px #55bb99 solid;
+	background-color: transparent;
+}
+.share span{
+	font-size: 13px;
+	color: #555;
+}
+.send2phone{
+	position: relative;
+	top: -120px;
+}
+.share {
+	float: right;
+}
+.listen_like:hover{
+	color: #fff;
+	background-color: #55bb99;
+}

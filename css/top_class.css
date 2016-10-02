@@ -6,6 +6,7 @@
 	position: relative;
     top: -52px;
     left: 480px;
+    width: 380px;
 }
 .nav a:hover{
 	color: black;
@@ -46,12 +47,15 @@
 	border:1px solid #999;
 	margin:-1px 0;
 	width: 77px;
-	padding:8px 0;
+	padding:12px 0;
 	text-align: left;
+	background-color: #fff;
+	z-index: 99;
 }
 .display_mune li{
 	list-style-type: none;
 	line-height: 25px;
+
 }
 .display_mune a{
 	color: black;
@@ -60,12 +64,13 @@
 }
 .border_right:hover .display_mune{
 	display: block;
+	
 }
 .border_right li:hover{
 	background-color: #e1e8e5;
 }
 .border_right p{
-  font-weight: bold;
+  font-family: arial;
 }
 .douban a{
 	color: #a1a5a8;
