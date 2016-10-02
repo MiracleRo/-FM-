@@ -21,7 +21,8 @@
 	font-size: 20px;
 }
 .music_ablum{
-	font-size: 14px;
+	font-size: 13px;
+	margin-top: 2px;
 }
 .music_ablum span{
 	color: #555;
@@ -37,14 +38,14 @@
 	width: 220px;
 	height: 2px;
 	position: relative;
-	top: 35px;
+	top: -210px;
 }
 .music_cur{
 	background-color: #096;
-	width: 20px;
+	width: 0;
 	height: 2px;
 	position: relative;
-	top: 33px;
+	top: -212px;
 }
 #player_btn{
 	position: relative;
@@ -54,14 +55,15 @@
 .player_time{
 	width: 39px;
     height: 15px;
-    border: 1px black solid;
     position: relative;
     left: 170px;
-    top: 35px;
+    top: -210px;
+    font-size: 11px;
+    color: #555;
 }
 .player_icon{
 	position: relative;
-    top: 80px;
+    top: -170px;
     left: 55px;
 }
 .player_icon img{
@@ -110,7 +112,7 @@
 }
 .send2phone{
 	position: relative;
-	top: -120px;
+	top: -370px;
 }
 .share {
 	float: right;
@@ -118,4 +120,33 @@
 .listen_like:hover{
 	color: #fff;
 	background-color: #55bb99;
+}
+#album_back{
+	position: relative;
+	left: -255px;
+	visibility: hidden;
+}
+#album_back:hover{
+	cursor: pointer;
+}
+#album:hover{
+	cursor: pointer;
+}
+.send2phone>img:hover{
+	cursor: pointer;
+}
+.listen_like:hover{
+	cursor: pointer;
+}
+#player_btn:hover{
+	cursor: pointer;
+}
+#con_back {
+	position: relative;
+    top: -125px;
+    left: -12px;
+    visibility: hidden;
+}
+#con_back:hover{
+	cursor: pointer;
 }
