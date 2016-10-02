@@ -1,0 +1,29 @@
+.top{
+	height: 170px;
+	background-color: #fff;
+	
+}
+.top_con{
+	width: 850px;
+	margin: 0 auto;
+}
+.mid{
+	height: 275px;
+	background-color: #e1e8e5;
+}
+.bottom{
+	height: 230px;
+	background-color: #fff;
+}
+.left{
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 26px;
+    z-index: 50;
+    background-color: #dfe8e5;
+}
+a{
+	text-decoration: none;
+}

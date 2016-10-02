@@ -1,0 +1,87 @@
+.nav a{
+	font-size: 13px;
+	color: #999;
+}
+.nav{
+	position: relative;
+    top: -52px;
+    left: 480px;
+}
+.nav a:hover{
+	color: black;
+}
+.border_right img{
+	position: relative;
+    top: 4px;
+    left: 4px;
+}
+.border_left img{
+	position: relative;
+	left: 4px;
+}
+.nav p{
+	font-size: 13px;
+	color: #999;
+	display: inline;
+}
+.no_border{
+	display: inline;
+	padding-left: 5px; 
+	margin: 0 5px;
+}
+.border_right{
+	display: inline;
+	border-right: 1px solid #999;
+	padding-right: 5px;
+}
+.border_left{
+	display: inline;
+	border-left: 1px solid #999;
+	padding-left: 7px;
+}
+.display_mune{
+	display: none;
+	position: absolute;
+	left: 25px;
+	border:1px solid #999;
+	margin:-1px 0;
+	width: 77px;
+	padding:8px 0;
+	text-align: left;
+}
+.display_mune li{
+	list-style-type: none;
+	line-height: 25px;
+}
+.display_mune a{
+	color: black;
+	font-size: 13px;
+	padding-left: 5px;
+}
+.border_right:hover .display_mune{
+	display: block;
+}
+.border_right li:hover{
+	background-color: #e1e8e5;
+}
+.border_right p{
+  font-weight: bold;
+}
+.douban a{
+	color: #a1a5a8;
+	font-weight: bold;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 30px;
+}
+.douban span{
+	color: #9dd6c5;
+}
+.douban_fm a{
+	color:#c9cecf;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+.logo{
+	position: relative;
+    top: 50px;
+}
