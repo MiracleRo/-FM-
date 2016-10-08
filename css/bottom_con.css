@@ -4,7 +4,10 @@
 }
 #down{
 	position: relative;
-    left: 760px;
+    left:690px;
     top: 40px;
 
+}
+#down:hover{
+	cursor: pointer;
 }

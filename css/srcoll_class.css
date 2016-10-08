@@ -1,0 +1,63 @@
+
+.sroll_class{
+	width: 600px;
+	margin: 0 20%;
+	overflow-y:hidden; 
+}
+.mhz{
+	position: relative;
+	top: 25px;
+	height: 15px;
+    width: 190px;
+    background-color: rgb(212, 222, 217);
+    padding-top: 10px;
+    padding-left: 25px;
+    font-size: 13px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.mhz:hover{
+	background-color: rgb(198,211,205);
+	cursor: pointer;
+}
+.db{
+	font-size: 13px;
+	color: #999;
+	text-align: center;
+}
+.db_div{
+	height: 245px;
+}
+.mhz_text{
+	position: relative;
+	top: 40px;
+	font-size: 13px;
+	color: #999;
+	margin-top: 25px;
+}
+.mhz_hr{
+	width: 155px;
+    position: relative;
+    top: 24px;
+    left: -165px;
+}
+.mhz span{
+	position: relative;
+	top: -10px;
+	float: right;
+	font-weight: bold;
+}
+.mon{
+	color: #fff;
+	background-color: #6BBD7A;
+	padding:3px 0;
+}
+.day{
+	color: #6BBD7A;
+	font-size: 23px;
+	margin: 5px;
+
+}
+#dal{
+	background-color: #fff;
+}

@@ -143,4 +143,39 @@
 		hid.style.display="none";
 		return false;
 	}
+	var down =document.getElementById('down');
+	down.onmouseover =function(){
+		down.src = 'img/down_hover.png';
+	}
+	down.onmouseout =function(){
+		down.src ='img/down.png';
+	}
+	var mhz_b = document.getElementsByClassName('mhz_b');
+	for(var i =0 ; i<mhz_b.length;i++){
+		mhz_b[i].onclick=function(){
+			this.style.backgroundColor = '#9dd6c5';
+		}
+	}
+	var left_class = document.getElementById('left');
+	var left_btn =document.getElementById('left_btn');
+	var sroll = document.getElementById('sroll');
+	 left_btn.onclick=function(){
+	 	if (left_class.className=='left') {
+	 		left_class.className="left1";
+	 		sroll.className='sroll';
+	 	}
+	 	else {
+	 		left_class.className='left';
+	 		sroll.className='sroll1';
+	 		
+	 	}
+
+	}
+	var left_img =document.getElementById('left_img');
+	var imgs = ['img/left1.jpg','img/left2.jpg','img/left3.jpg','img/left4.jpg','img/left5.jpg'];
+		setInterval(puls,2000);
+	function puls() {
+		 i++;
+		 left_img.src=imgs[i%5];
+	}
 }(window))
