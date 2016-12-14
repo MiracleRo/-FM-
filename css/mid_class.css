@@ -12,9 +12,8 @@
 	height: 245px;
 	width: 510px;
 	background-color: #fff;
-	position: relative;
+	position: absolute;
 	left: 340px;
-	top: -90px;
 	box-shadow:10px 10px 5px #ededed;
 }
 .music_artist{
@@ -123,7 +122,7 @@
 }
 #album_back{
 	position: relative;
-	left: -255px;
+	left: -250px;
 	visibility: hidden;
 }
 #album_back:hover{

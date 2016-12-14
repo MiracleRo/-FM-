@@ -4,12 +4,14 @@
 	position: fixed;
 	top: 0px;
 	left: 20%;
+	z-index: 100;
 }
 .top_con{
 	width: 850px;
 	margin: 0 auto;
 }
 .mid{
+	z-index: -1;
 	height: 275px;
 	background-color: #e1e8e5;
 	position: fixed;
@@ -27,16 +29,17 @@
     left: 0;
     top: 0;
     width: 675px;
-    z-index: 50;
+   z-index: 101;
 	background-color: #fff;
+	height: 1535px;
 }
 a{
 	text-decoration: none;
 }
 .sroll{
 	position: relative;
-	z-index: 49;
-	top: 170px;
-	width: 400px;
-	left: 120px;
+    top: 170px;
+    width: 850px;
+    left: 20%;
 }
+

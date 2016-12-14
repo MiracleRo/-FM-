@@ -8,20 +8,24 @@
 	position:relative;
 	top: 90px; 
 }
+.mhz_div img{
+	cursor: pointer;
+	border-radius: 25px;
+}
 .title input{
 	height: 28px;
 	width: 230px;
 	color: #999;
 	position: relative;
-    top: 70px;
+       top: 55px;
     left: 300px;
 }
 .left_mhz {
 	width: 100%;
-	height: 275px;
-	background-color: #dfe8e5;
+	height: 276px;
+	background-color: #eff5f2;
 	position: relative;
-	top: 120px;
+	top: 100px;
 }
 .left_nav {
 	position: relative;
@@ -33,7 +37,7 @@
 }
 .left_nav a{
 	color: #999;
-	margin-left: 3px;
+	margin-left: 1px;
 	padding-left: 2px;
 	padding-right: 8px;
 }
@@ -44,27 +48,30 @@
 .hot_mh{
 	position: relative;
 	top:240px;
+	left: 90px;
 	width: 500px;
 }
 .hot_mh p{
 	font-size: 13px; 
 }
 .mhz_div a{
+	display: inline-block;
+	font-size: 13px;
 	position: relative;
 	top: -25px;
 	color: black;
+	    width: 140px;
+	        left: -40px;
 }
 .mhz_div span{
 	font-size: 13px;
 	color: #555;
 	position: relative;
-	left: -65px;
-	top: -5px;
+	    left: 57px;
+    top: -25px;
 }
 .mhz2{
-	float: right;
-	position: relative;
-	top: -49px;
+
 }
 #left_btn{
     position: relative;
@@ -74,14 +81,40 @@
 .left1{
 	position: fixed;
     left: -655px;
-    top: -13px;
+    top: -1px;
     width: 675px;
     z-index: 50;
     background-color: #fff;
+    box-shadow: 0 0 30px #777
 }
 .sroll_fix{
 
 }
-#left_img{
-	width: 200px;
+.mhz_div{
+	display: inline-block;
+	width: 240px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+.nums{
+	display: inline-block;
+	position: relative;
+	top: -235px;
+	left: 25px;
+}
+.num{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	background-color: #ddd;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	color:#333;
+	margin: 4px;
+}
+.hid_ad{
+	position: relative;
+	left: -49px;
+	visibility: hidden;
 }

@@ -137,7 +137,7 @@
 		hid.style.display='inline';
 	}
 	share.onmouseout =function(){
-		setTimeout(hidden,2000);
+		var time = setTimeout(hidden,2000);
 	}
 	function hidden(){
 		hid.style.display="none";
@@ -153,29 +153,59 @@
 	var mhz_b = document.getElementsByClassName('mhz_b');
 	for(var i =0 ; i<mhz_b.length;i++){
 		mhz_b[i].onclick=function(){
+			for(var j =0; j<mhz_b.length;j++){
+				mhz_b[j].style.backgroundColor = 'rgb(212, 222, 217)';
+			}
 			this.style.backgroundColor = '#9dd6c5';
 		}
 	}
 	var left_class = document.getElementById('left');
 	var left_btn =document.getElementById('left_btn');
 	var sroll = document.getElementById('sroll');
+	var last_p = document.getElementById('last_p');
 	 left_btn.onclick=function(){
 	 	if (left_class.className=='left') {
 	 		left_class.className="left1";
 	 		sroll.className='sroll';
+	 		last_p.className='db';
+	 		
 	 	}
 	 	else {
 	 		left_class.className='left';
 	 		sroll.className='sroll1';
+	 		last_p.className='db_fixed';
 	 		
 	 	}
 
 	}
-	var left_img =document.getElementById('left_img');
-	var imgs = ['img/left1.jpg','img/left2.jpg','img/left3.jpg','img/left4.jpg','img/left5.jpg'];
-		setInterval(puls,2000);
-	function puls() {
-		 i++;
-		 left_img.src=imgs[i%5];
+	var num =document.getElementsByClassName('num');
+	for (var i =0;i<num.length;i++){
+		num[i].onmouseover = function () {
+			this.style.backgroundColor='#9dd6c5';
+		}
+		num[i].onmouseout=function () {
+			this.style.backgroundColor='#ddd';
+		}
 	}
+	var mhz_div=document.getElementsByClassName('mhz_div');
+    var ad_hid =document.getElementsByClassName('hid_ad');
+    for (var i =0 ;i<mhz_div.length;i++){
+		mhz_div[i].onmouseover=(function (i) {
+			return function () {
+				ad_hid[i].style.visibility = 'visible';
+			}
+		})(i)
+		mhz_div[i].onmouseout=(function (i) {
+			return function () {
+				ad_hid[i].style.visibility = 'hidden';
+			}
+		})(i)
+    }
+	// var left_img =document.getElementById('left_img');
+	// var imgs = ['img/left1.jpg','img/left2.jpg','img/left3.jpg','img/left4.jpg','img/left5.jpg'];
+	// 	setInterval(puls,2000);
+	// function puls() {
+	// 	 i++;
+	// 	 left_img.src=imgs[i%5];
+	// }
 }(window))

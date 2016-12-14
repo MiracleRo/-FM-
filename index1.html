@@ -1,276 +1,308 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>我-豆瓣FM-Beta</title>
-	<link rel="stylesheet" type="text/css" href="css/all.css"/>
-	<link rel="stylesheet" type="text/css" href="css/top_class.css"/>
-	<link rel="stylesheet" type="text/css" href="css/mid_class.css"/>
-	<link rel="stylesheet" type="text/css" href="css/bottom_con.css"/>
-	<link rel="stylesheet" type="text/css" href="css/srcoll_class.css">
-	<link rel="stylesheet" type="text/css" href="css/left_class.css"/>
-	<script type="text/javascript" defer src="js/index1.js"></script>
+    <meta charset="utf-8">
+    <title>我-豆瓣FM-Beta</title>
+    <link rel="stylesheet" type="text/css" href="css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/top_class.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mid_class.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bottom_con.css"/>
+    <link rel="stylesheet" type="text/css" href="css/srcoll_class.css">
+    <link rel="stylesheet" type="text/css" href="css/left_class.css"/>
+    <script type="text/javascript" defer src="js/index1.js"></script>
 </head>
 <body>
-	<!--top-->
-	<div class="top">
-		<div class="top_con">
-			<div class="logo">
-				<div class="douban">
-					<a href="#g">豆瓣<span>FM</span></a>
-				</div>
-				<div class="douban_fm">
-					<a href="#g">douban.fm</a>
-				</div>
-			</div>
-			<div class="nav">
-				<nav>
-					<div class="border_right">
-								<img src="img/weibo_logo.png">
-								<p>Levine_Adam</p>
-							<div class="display_mune">
-								<li><a href="#hh">付费服务</a></li>
-								<li><a href="#g">赠送PRO</a></li>
-								<li><a href="#hj">退出</a></li>
-							</div>
-					</div>
-					<div class="no_border">
-						<a href="#f1">累计听0首</a>
-						<a href="#h">红心</a>
-						<a href="#g">收藏兆赫</a>
-					</div>
-					<div class="border_left">
-						<a href="#f3">升级到<img src="img/logo_img.png"></a>
-					</div>	
-				</nav>
-			</div>
-		</div>
-	</div>
-	<!--mid-->
-	<div class="mid">
-		<div class="mid_con">
-			<div class="player">
-				<div class="player_visible">
-					<img src="img/music_img.png"/ id="album">
-					<img src="img/album_back.png"/ id="album_back">
-						<div class="player_con">
-							<audio src="music/fun.mp3" id="my_music"></audio>
-							<img src="img/player_btn.png" id="player_btn">
-							<div class="music_artist">Troye Sivan</div>
-							<div class="music_ablum">< Blue Neighbourhood > <span>2015</span></div>
-							<div class="music_name">YOUTH</div>
-							<img src="img/con_back.png" id="con_back" />
-							<div class="music_dur" id="dur_div"></div>
-							<div class="music_cur" id="cur_div"></div>
-							<div class="player_time" id="time_div"></div>
-							<div class="player_icon">
-								<img src="img/love.png" id="love_icon">
-								<img src="img/del.png" id="del_icon">
-								<img src="img/next.png" id="next_icon">
-							</div>
-						</div>							
-						<div class="send2phone">
-								<img src="img/radio_icon.png">
-								<a href="#gfh">发送歌曲到手机</a>
-								<div class="listen_like">
-									<img src="img/like.png" id="like">
-									听相似歌曲
-								</div>
-								<div class="share">
-									<span>分享这首歌</span>
-									<div class="hid_icon">
-										<a href="#g"><img src="img/douban.png" id="douban"></a>
-										<a href="#g"><img src="img/weibo.png" id="weibo"></a>
-										<a href="#g"><img src="img/wechat.png" id="wechat"></a>
-										<a href="#g"><img src="img/qq.png" id="qq"></a>
-										<a href="#g"><img src="img/txweibo.png" id="txweibo"></a>
-										<a href="#g"><img src="img/renren.png" id="renren"></a>
-									</div>
-								</div>
-						</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bottom">
-		<div class="bottom_con">
-			<img src="img/down.png" id="down"/>
-		</div>
-	</div>
-	<div class="sroll" id="sroll">
-		<div class="sroll_class">
-			<div class="mhz mhz_b">我的私人兆赫
-			</div>
-			<div class="mhz mhz_b">我的红心兆赫
-			</div>
-			<div class="mhz mhz_b" id="dal">每日私人歌单
-			</div>
-			<div class="mhz">豆瓣精选兆赫
-			<span class="mon">10<br>月</span>
-			<span class="day">03</span>
-			</div>
-			<div class="mhz_text">最近收听</div>
-			<hr class="mhz_hr" />
-			<div class="mhz_text">试试这些</div>
-			<hr class="mhz_hr"/>
-			<div class="mhz mhz_b">Song From 	A Secret Garden
-			</div>
-			<div class="mhz mhz_b">Sugar系 MHz
-			</div>
-			<div class="mhz mhz_b">Luv Letter 系 MHz
-			</div>
-			<div class="mhz mhz_b">Gotta Have You 系 MHz
-			</div>
-			<div class="mhz mhz_b">The Rose(extra Ver.) 系 MHz
-			</div>
-			<div class="mhz mhz_b">SK-II 最初的梦 MHz
-			</div>
-			<div class="db_div"></div>
-			<p class="db">© 2016 douban 京ICP备11027288号 网络视听许可证0110418号 京公网安备110105012274 广告合作: adfm@douban.com | FM游乐场 | FM用户手册 |<br/>豆瓣FM中心</p>
-
-		</div>	
-	</div>
-	<div class="left1" id="left">
-		<div class="title">
-			<div>全部兆赫</div>
-			<input type="text" name="a" value="搜索兆赫">
-		</div>
-		<div class="left_mhz">
-			<img src="img/left.png" id="left_btn">
-			<img src="img/left1.jpg" id="left_img">
-		</div>
-		<div class="left_nav">
-			<nav>
-				<a href="#f11">摇滚</a>|
-				<a href="#f13">古典</a>|
-				<a href="#f34">爵士</a>|
-				<a href="#fr5">民谣/乡村</a>|
-				<a href="#f5">流行</a>|
-				<a href="#f6">电子</a>|
-				<a href="#f7">原声配乐</a>|
-				<a href="#f8">轻音乐</a>|
-				<a href="#9f">说唱</a>|
-				<a href="#f3">雷鬼</a>|
-				<a href="#f4">拉丁</a>|
-				<a href="#56f">世界音乐</a>|
-				<a href="#f7">鲁斯</a>|
-				<a href="#f7">布放克/灵歌/R&B</a>
-			</nav>
-		</div>
-		<div class="hot_mh">
-				<p>热门兆赫</p>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-		</div>
-		<div class="hot_mh">
-				<p>热门兆赫</p>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-			<div class="mhz_div mhz2">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-		</div>
-		<div class="hot_mh">
-				<p>热门兆赫</p>
-			<div class="mhz_div">
-				<img src="img/mhz_1.jpg">
-				<a href="">华语MHz</a>
-				<span>1189首歌曲 兆赫详情</span>
-			</div>
-		</div>	
-	</div>
+<!--top-->
+<div class="top">
+    <div class="top_con">
+        <div class="logo">
+            <div class="douban">
+                <a href="#g">豆瓣<span>FM</span></a>
+            </div>
+            <div class="douban_fm">
+                <a href="#g">douban.fm</a>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="border_right">
+                    <img src="img/weibo_logo.png">
+                    <p>Levine_Adam</p>
+                    <div class="display_mune">
+                        <li><a href="#hh">付费服务</a></li>
+                        <li><a href="#g">赠送PRO</a></li>
+                        <li><a href="#hj">退出</a></li>
+                    </div>
+                </div>
+                <div class="no_border">
+                    <a href="#f1">累计听0首</a>
+                    <a href="#h">红心</a>
+                    <a href="#g">收藏兆赫</a>
+                </div>
+                <div class="border_left">
+                    <a href="#f3">升级到<img src="img/logo_img.png"></a>
+                </div>
+            </nav>
+        </div>
+        <div class="player">
+            <div class="player_visible">
+                <img src="img/music_img.png"/ id="album">
+                <img src="img/album_back.png"/ id="album_back">
+                <div class="player_con">
+                    <audio src="music/fun.mp3" id="my_music"></audio>
+                    <img src="img/player_btn.png" id="player_btn">
+                    <div class="music_artist">Troye Sivan</div>
+                    <div class="music_ablum">< Blue Neighbourhood > <span>2015</span></div>
+                    <div class="music_name">YOUTH</div>
+                    <img src="img/con_back.png" id="con_back"/>
+                    <div class="music_dur" id="dur_div"></div>
+                    <div class="music_cur" id="cur_div"></div>
+                    <div class="player_time" id="time_div"></div>
+                    <div class="player_icon">
+                        <img src="img/love.png" id="love_icon">
+                        <img src="img/del.png" id="del_icon">
+                        <img src="img/next.png" id="next_icon">
+                    </div>
+                </div>
+                <div class="send2phone">
+                    <img src="img/radio_icon.png">
+                    <a href="#gfh">发送歌曲到手机</a>
+                    <div class="listen_like">
+                        <img src="img/like.png" id="like">
+                        听相似歌曲
+                    </div>
+                    <div class="share">
+                        <span>分享这首歌</span>
+                        <div class="hid_icon">
+                            <a href="#g"><img src="img/douban.png" id="douban"></a>
+                            <a href="#g"><img src="img/weibo.png" id="weibo"></a>
+                            <a href="#g"><img src="img/wechat.png" id="wechat"></a>
+                            <a href="#g"><img src="img/qq.png" id="qq"></a>
+                            <a href="#g"><img src="img/txweibo.png" id="txweibo"></a>
+                            <a href="#g"><img src="img/renren.png" id="renren"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--mid-->
+<div class="mid">
+    <div class="mid_con">
+    </div>
+</div>
+<div class="bottom">
+    <div class="bottom_con">
+        <img src="img/down.png" id="down"/>
+    </div>
+</div>
+<div class="sroll" id="sroll">
+    <div class="sroll_class">
+        <div class="mhz mhz_b">我的私人兆赫
+        </div>
+        <div class="mhz mhz_b">我的红心兆赫
+        </div>
+        <div class="mhz mhz_b" id="dal">每日私人歌单
+        </div>
+        <div class="mhz">豆瓣精选兆赫
+            <span class="mon">10<br>月</span>
+            <span class="day">03</span>
+        </div>
+        <div class="mhz_text">最近收听</div>
+        <hr class="mhz_hr"/>
+        <div class="mhz_text">试试这些</div>
+        <hr class="mhz_hr"/>
+        <div class="mhz mhz_b">Song From A Secret Garden
+        </div>
+        <div class="mhz mhz_b">Sugar系 MHz
+        </div>
+        <div class="mhz mhz_b">Luv Letter 系 MHz
+        </div>
+        <div class="mhz mhz_b">Gotta Have You 系 MHz
+        </div>
+        <div class="mhz mhz_b">The Rose(extra Ver.) 系 MHz
+        </div>
+        <div class="mhz mhz_b">SK-II 最初的梦 MHz
+        </div>
+        <div class="db_div"></div>
+    </div>
+</div>
+<div class="db" id="last_p">
+    <p>© 2016 douban 京ICP备11027288号 网络视听许可证0110418号 京公网安备110105012274 广告合作: adfm@douban.com | FM游乐场 | FM用户手册 |<br/>豆瓣FM中心
+    </p>
+</div>
+<div class="left1" id="left">
+    <div class="title">
+        <div>全部兆赫</div>
+        <input type="text" name="a" placeholder="搜索兆赫">
+    </div>
+    <div class="left_mhz">
+        <img src="img/left.png" id="left_btn">
+        <img src="img/ad_top1.jpg" id="left_img">
+        <div class="nums">
+            <a class="num">1</a>
+            <a class="num">2</a>
+            <a class="num">3</a>
+            <a class="num">4</a>
+            <a class="num">5</a>
+            <a class="num">6</a>
+        </div>
+    </div>
+    <div class="left_nav">
+        <nav>
+            <a href="#f11">摇滚</a>|
+            <a href="#f13">古典</a>|
+            <a href="#f34">爵士</a>|
+            <a href="#fr5">民谣/乡村</a>|
+            <a href="#f5">流行</a>|
+            <a href="#f6">电子</a>|
+            <a href="#f7">原声配乐</a>|
+            <a href="#f8">轻音乐</a>|
+            <a href="#9f">说唱</a>|
+            <a href="#f3">雷鬼</a>|
+            <a href="#f4">拉丁</a>|
+            <a href="#56f">世界音乐</a>|
+            <a href="#f7">鲁斯</a>|
+            <a href="#f7">布放克/灵歌/R&B</a>
+        </nav>
+    </div>
+    <div class="hot_mh">
+        <p>热门兆赫</p>
+        <div class="mhz_div">
+            <img src="img/ad11.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">华语MHz</a>
+            <span>1189首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad12.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">欧美MHz</a>
+            <span>3599首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad13.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">八零MHz</a>
+            <span>883首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad14.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">工作学习MHz</a>
+            <span>兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad15.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">粤语MHz</a>
+            <span>2704首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad16.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">轻音乐MHz</a>
+            <span>2736首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad17.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">咖啡MHz</a>
+            <span>1710首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad18.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">你的歌词我的故事MHz</a>
+            <span>588首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad19.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">看书浇花晒太阳MHz</a>
+            <span>1228首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad110.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">爵士MHz</a>
+            <span>4163首歌曲 兆赫详情</span>
+        </div>
+    </div>
+    <div class="hot_mh">
+        <p>上升最快</p>
+        <div class="mhz_div">
+            <img src="img/ad21.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">工作学习MHz</a>
+            <span>兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad22.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">小清新MHz</a>
+            <span>180首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad23.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">新歌MHz</a>
+            <span>10000+首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad24.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">咖啡MHz</a>
+            <span>1710首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad25.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">古典MHz</a>
+            <span>2646首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad26.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">爵士MHz</a>
+            <span>4163首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad27.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">民谣MHz</a>
+            <span>3781首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad28.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">轻音乐MHz</a>
+            <span>2736首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div">
+            <img src="img/ad29.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">影视原声MHz</a>
+            <span>4377首歌曲 兆赫详情</span>
+        </div>
+        <div class="mhz_div mhz2">
+            <img src="img/ad210.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">九零MHz</a>
+            <span>874首歌曲 兆赫详情</span>
+        </div>
+    </div>
+    <div class="hot_mh">
+        <p>品牌兆赫</p>
+        <div class="mhz_div">
+            <img src="img/ad31.jpg" class="show_ad">
+            <img src="img/adhover.png" class="hid_ad">
+            <a href="">
+                SK-II 最初的梦MHz</a>
+            <span>50首歌曲 兆赫详情</span>
+        </div>
+    </div>
+</div>
 </body>
 </html>
