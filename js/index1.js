@@ -1,13 +1,14 @@
-(function(){
+
 	var album=document.getElementById('album');
 	var ablum_back = document.getElementById('album_back');
+	var player_btn =document.getElementById('player_btn');
 	album.onmouseover = function(){
 		ablum_back.style.visibility="visible";
 	}
 	ablum_back.onmouseout = function(){
 		ablum_back.style.visibility="hidden";
 	}
-	var player_btn =document.getElementById('player_btn');
+	
 	player_btn.onmouseover = function(){
 		player_btn.src="img/player_btn_hover.png";
 	}
@@ -35,6 +36,9 @@
 		var cur_div =document.getElementById('cur_div');
 		var dur_div = document.getElementById('dur_div');
 		cur_div.style.width=mymusic.currentTime/mymusic.duration*220+"px";
+		if(mymusic.currentTime==mymusic.duration){
+				next_music();
+		}
 	}
 	function zero(a){
 		if (a<10) {
@@ -47,7 +51,8 @@
 	var del= document.getElementById('del_icon') ;
 	var next= document.getElementById('next_icon') ;
 	love.onmouseover=function over1(){
-		if (love.src=='file:///D:/fm/img/love_red.png') {
+		var src = love.getAttribute('src');
+		if (src=='img/love_red.png') {
 			return false;
 		}
 		else{
@@ -55,7 +60,8 @@
 		}
 	}
 	love.onmouseout=function out1(){
-		if (love.src=='file:///D:/fm/img/love_red.png') {
+		var src = love.getAttribute('src');
+		if (src=='img/love_red.png') {
 			return false;
 		}
 		else{love.src = 'img/love.png';
@@ -74,12 +80,28 @@
 		next.src = 'img/next.png';
 	}
 	love.onclick=function(){
-		if (love.src=='file:///D:/fm/img/love_red.png') {
+		var src = love.getAttribute('src');
+		if (src=='img/love_red.png') {
 			love.src='img/love.png';
 		}else{
 			love.src ='img/love_red.png';
 		}
 		
+	}
+	var music_times = 0;
+	next.onclick = next_music;
+	function next_music(){
+		music_times=music_times%2;
+		if (music_times==0) {
+			album.src="img/music.jpg";
+			mymusic.src="music/youth.mp3"
+			mymusic.play();
+		}else{
+			album.src="img/music2.jpg";
+			mymusic.src="music/fun.mp3"
+			mymusic.play();
+		}
+		music_times++;
 	}
 	var like =document.getElementById('like');
 	var listen_like =document.getElementsByClassName('listen_like')[0];
@@ -168,23 +190,29 @@
 	 		left_class.className="left1";
 	 		sroll.className='sroll';
 	 		last_p.className='db';
-	 		
+	 		left_btn.src='img/sidebar_icon1.png';
 	 	}
 	 	else {
 	 		left_class.className='left';
 	 		sroll.className='sroll1';
 	 		last_p.className='db_fixed';
-	 		
+	 		left_btn.src='img/sidebar_icon11.png';
 	 	}
 
 	}
-	var num =document.getElementsByClassName('num');
-	for (var i =0;i<num.length;i++){
-		num[i].onmouseover = function () {
-			this.style.backgroundColor='#9dd6c5';
+	left_btn.onmouseover = function(){
+		if (left_class.className=='left') {
+			left_btn.src='img/sidebar_icon2.png';
+		}else{
+			left_btn.src='img/sidebar_icon22.png';
 		}
-		num[i].onmouseout=function () {
-			this.style.backgroundColor='#ddd';
+		
+	}
+	left_btn.onmouseout = function(){
+		if (left_class.className=='left') {
+			left_btn.src='img/sidebar_icon1.png';
+		}else{
+			left_btn.src='img/sidebar_icon11.png';
 		}
 	}
 	var mhz_div=document.getElementsByClassName('mhz_div');
@@ -201,11 +229,43 @@
 			}
 		})(i)
     }
-	// var left_img =document.getElementById('left_img');
-	// var imgs = ['img/left1.jpg','img/left2.jpg','img/left3.jpg','img/left4.jpg','img/left5.jpg'];
-	// 	setInterval(puls,2000);
-	// function puls() {
-	// 	 i++;
-	// 	 left_img.src=imgs[i%5];
-	// }
-}(window))
+    
+  	var all_mhz =document.getElementsByClassName('all_mhz');
+  	function addHideClass(num){
+  		for (var i = 0; i < all_mhz.length; i++) {
+  			all_mhz[i].style.display='none';  	
+  		}
+  		all_mhz[num].style.display='block';
+  	}
+  	var num =document.getElementsByClassName('num');
+  	for (var i = 0; i < num.length; i++) {
+  		num[i].onmouseover = (function(i){
+  			return function(){
+  				addHideClass(i);
+  				left_img.src=imgs[i];
+  				changeBack(i);
+  				num_i=i;
+  			}
+  		})(i)
+  	}
+	function changeBack(n){
+		for (var i = 0; i < num.length; i++) {
+			num[i].style.backgroundColor='#ddd';
+		}
+		num[n].style.backgroundColor='#9dd6c5';
+
+	}
+	var num_i =0 ;
+	var left_img =document.getElementById('left_img');
+	var imgs=['img/ad_top1.jpg','img/ad_top2.jpg','img/ad_top3.jpg','img/ad_top4.jpg','img/ad_top5.jpg','img/ad_top6.jpg'];
+	setInterval(puls,3000);
+	function puls() {
+		 num_i=num_i%6
+		 left_img.src=imgs[num_i];
+		 changeBack(num_i);
+		 addHideClass(num_i);
+		  num_i++;
+	}
+	addHideClass(0);
+	changeBack(0);
+	mymusic.play();

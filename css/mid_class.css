@@ -152,4 +152,7 @@
 .player_visible{
 	height: 245px;
 }
-
+#album{
+	width: 245px;
+	height: 245px;
+}
