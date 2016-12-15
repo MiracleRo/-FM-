@@ -4,6 +4,7 @@
 	var player_btn =document.getElementById('player_btn');
 	album.onmouseover = function(){
 		ablum_back.style.visibility="visible";
+		console.log(111)
 	}
 	ablum_back.onmouseout = function(){
 		ablum_back.style.visibility="hidden";
