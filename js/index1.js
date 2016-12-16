@@ -266,6 +266,15 @@
 		 addHideClass(num_i);
 		  num_i++;
 	}
+	
+	document.body.onmousewheel=scrollBody;
+	function scrollBody(){
+		if (document.body.scrollTop>500) {
+			
+		}else{
+			
+		}
+	}
 	addHideClass(0);
 	changeBack(0);
 	mymusic.play();

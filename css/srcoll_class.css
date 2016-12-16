@@ -74,3 +74,11 @@
         top: 620px;
 
 }
+#last_p img{
+	margin-bottom: 30px;
+    position: relative;
+    left: -105px;
+}
+.sroll1{
+	margin-left:20%; 
+}
