@@ -261,7 +261,7 @@
 	var imgs=['img/ad_top1.jpg','img/ad_top2.jpg','img/ad_top3.jpg','img/ad_top4.jpg','img/ad_top5.jpg','img/ad_top6.jpg'];
 	setInterval(puls,3000);
 	function puls() {
-		 num_i=num_i%6
+		 num_i=num_i%6;
 		 left_img.src=imgs[num_i];
 		 changeBack(num_i);
 		 addHideClass(num_i);
